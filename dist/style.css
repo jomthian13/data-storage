@@ -1,0 +1,97 @@
+html {
+  font-size: 100%;
+  box-sizing: border-box;
+  min-height: 100vh;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Raleway", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  color: white;
+}
+
+h1,
+h2,
+h3 {
+  margin: 0;
+  line-height: 1.15;
+  font-weight: 700;
+}
+
+h1 {
+  font-size: 33px;
+}
+
+a,
+a:visited,
+a:hover {
+  text-decoration: none;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  display: block;
+}
+
+.container {
+  max-width: 69.375rem;
+  margin: auto;
+}
+
+.container--pall {
+  padding-left: 1.5625rem;
+  padding-right: 1.5625rem;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+}
+
+@media (min-width: 40em) {
+  .container--pall {
+    padding-left: 4rem;
+    padding-right: 4rem;
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+  }
+}
+
+.container--px {
+  padding-left: 1.5625rem;
+  padding-right: 1.5625rem;
+}
+
+.container--py {
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+}
+
+.main-container {
+  height: 100vh;
+  width: 100vw;
+  background-image: url(/images/bg-mobile.png);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+
+@media (min-width: 40em) {
+  .main-container {
+    background-color: #0c122c;
+    background-image: url(/images/bg-desktop.png);
+    background-size: 100% 50%;
+    background-position: bottom;
+  }
+}
+/*# sourceMappingURL=style.css.map */
