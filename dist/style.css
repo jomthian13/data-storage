@@ -81,7 +81,7 @@ img {
 .main-container {
   height: 100vh;
   width: 100vw;
-  background-image: url(/images/bg-mobile.png);
+  background-image: url(../images/bg-mobile.png);
   background-repeat: no-repeat;
   background-size: 100% 100%;
 }
@@ -89,7 +89,7 @@ img {
 @media (min-width: 40em) {
   .main-container {
     background-color: #0c122c;
-    background-image: url(/images/bg-desktop.png);
+    background-image: url(../images/bg-desktop.png);
     background-size: 100% 50%;
     background-position: bottom;
   }
