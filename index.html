@@ -21,7 +21,34 @@
     <title>Frontend Mentor | Fylo data storage component</title>
   </head>
   <body>
-    <div class="main-container"></div>
+    <div class="main-container">
+      <div class="options">
+        <div class="options__logo">
+          <a href="/">
+            <img src="../images/logo.svg" alt="" />
+          </a>
+        </div>
+        <div class="options__icons">
+          <a href="#"><img src="/images/icon-document.svg" alt="" /></a
+          ><a href="#"><img src="/images/icon-folder.svg" alt="" /></a
+          ><a href="#"><img src="/images/icon-upload.svg" alt="" /></a>
+        </div>
+      </div>
+      <div class="info flex flex-jc-c flex-ai-c">
+        <div class="info__used">
+          You’ve used <strong><span id="sto-used">815</span> GB</strong> of your
+          storage
+        </div>
+        <div class="info__bar">
+          <progress max="100" value="50"></progress>
+          <div>
+            <div>0 GB</div>
+            <div>1000 GB</div>
+          </div>
+        </div>
+        <div class="info__stoLeft">185</div>
+      </div>
+    </div>
     <script src="/app/js/app.js"></script>
   </body>
 </html>

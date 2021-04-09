@@ -17,6 +17,20 @@ body {
   font-size: 14px;
   font-weight: 400;
   color: white;
+  position: relative;
+  height: 100vh;
+  background-image: url(../images/bg-mobile.png);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+
+@media (min-width: 40em) {
+  body {
+    background-color: #0c122c;
+    background-image: url(../images/bg-desktop.png);
+    background-size: 100% 50%;
+    background-position: bottom;
+  }
 }
 
 h1,
@@ -78,20 +92,84 @@ img {
   padding-bottom: 3rem;
 }
 
-.main-container {
-  height: 100vh;
-  width: 100vw;
-  background-image: url(../images/bg-mobile.png);
-  background-repeat: no-repeat;
-  background-size: 100% 100%;
+.flex {
+  display: flex;
 }
 
-@media (min-width: 40em) {
-  .main-container {
-    background-color: #0c122c;
-    background-image: url(../images/bg-desktop.png);
-    background-size: 100% 50%;
-    background-position: bottom;
-  }
+.flex-jc-sb {
+  justify-content: space-between;
+}
+
+.flex-jc-c {
+  justify-content: center;
+}
+
+.flex-ai-c {
+  align-items: center;
+}
+
+.main-container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.options {
+  background-color: #1d2c67;
+  padding: 42px 107px 42px 42px;
+  border-radius: 10px;
+  border-top-right-radius: 100px;
+  margin-bottom: 18px;
+}
+
+.options__logo {
+  margin-bottom: 34px;
+}
+
+.options__icons {
+  display: flex;
+}
+
+.options__icons a {
+  background-color: #0c122c;
+  padding: 15px;
+  border-radius: 10px;
+}
+
+.options__icons a:not(:last-child) {
+  margin-right: 14px;
+}
+
+.info {
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: #1d2c67;
+  padding: 42px;
+  border-radius: 10px;
+}
+
+.info__bar progress {
+  -webkit-appearance: none;
+  width: 260px;
+  height: 20px;
+  border: 3px solid #0c122c;
+  border-radius: 10px;
+  overflow: hidden;
+  color: linear-gradient(to right, #ffa399, #ff4d97);
+}
+
+.info__bar progress::-webkit-progress-bar {
+  background-color: #0c122c;
+}
+
+.info__bar progress::-webkit-progress-value {
+  background: linear-gradient(to right, #ffa399, #ff4d97);
+  border-radius: 10px;
+}
+
+.info__bar progress::-moz-progress-bar {
+  background: linear-gradient(to right, #ffa399, #ff4d97);
 }
 /*# sourceMappingURL=style.css.map */
