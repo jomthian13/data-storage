@@ -1,0 +1,27 @@
+.options {
+  background-color: $darkBlue;
+  padding: 41px 109px 41px 41px;
+  border-radius: 10px;
+  border-top-right-radius: 100px;
+  margin-bottom: 18px;
+  @include breakpoint-up(medium) {
+    margin-bottom: unset;
+    margin-right: 33px;
+  }
+
+  &__logo {
+    margin-bottom: 34px;
+  }
+  &__icons {
+    display: flex;
+    a {
+      background-color: $veryDarkBlue;
+      padding: 15px;
+      border-radius: 10px;
+
+      &:not(:last-child) {
+        margin-right: 15px;
+      }
+    }
+  }
+}

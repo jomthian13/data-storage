@@ -34,19 +34,24 @@
           ><a href="#"><img src="images/icon-upload.svg" alt="" /></a>
         </div>
       </div>
-      <div class="info flex flex-jc-c flex-ai-c">
-        <div class="info__used">
+      <div class="info">
+        <p class="info__used">
           You’ve used <strong><span id="sto-used">815</span> GB</strong> of your
           storage
-        </div>
+        </p>
         <div class="info__bar">
-          <progress max="100" value="50"></progress>
-          <div>
-            <div>0 GB</div>
-            <div>1000 GB</div>
+          <!-- <progress max="1000" value="815"></progress> -->
+          <div class="storageBar">
+            <span class="storageUsed">
+              <span class="storageIndi"></span>
+            </span>
+          </div>
+          <div class="flex flex-jc-sb">
+            <strong><p>0 GB</p></strong>
+            <strong><p>1000 GB</p></strong>
           </div>
         </div>
-        <div class="info__stoLeft">185</div>
+        <div class="info__stoLeft flex flex-ai-c">185</div>
       </div>
     </div>
     <script src="/app/js/app.js"></script>

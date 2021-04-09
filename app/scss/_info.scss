@@ -1,0 +1,74 @@
+.info {
+  //display: block;
+  position: relative;
+  text-align: center;
+  background-color: $darkBlue;
+  padding: 42px 34px;
+  border-radius: 10px;
+  //border-top-right-radius: 100px;
+  @include breakpoint-up(medium) {
+    text-align: left;
+    min-width: 545px;
+  }
+
+  &__used {
+    margin-bottom: 19px;
+    span {
+    }
+  }
+  &__bar {
+    //Storage Bar
+    .storageBar {
+      width: 100%;
+      height: 21px;
+      background-color: $veryDarkBlue;
+      padding: 3px;
+      border-radius: 10px;
+      margin-bottom: 14px;
+      .storageUsed {
+        position: relative;
+        display: flex;
+        align-items: center;
+        height: 100%;
+        width: 80.15%;
+        background-image: $Gradient;
+        border-radius: 10px;
+        .storageIndi {
+          position: absolute;
+          right: 2px;
+          height: 11px;
+          width: 11px;
+          border-radius: 50%;
+          background: whitesmoke;
+        }
+      }
+    }
+  }
+  &__stoLeft {
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+    text-align: center;
+    width: fit-content;
+    border-radius: 11px;
+    font-size: $font-lg;
+    font-weight: 700;
+    color: black;
+    background-color: whitesmoke;
+    padding: 22px 25px;
+
+    @include breakpoint-up(medium) {
+      top: -25%;
+      left: 60%;
+      transform: translate(0%);
+    }
+
+    &::after {
+      font-size: $font-md;
+      font-weight: 700;
+      content: "GB LEFT";
+      color: $grayishBlue;
+      margin-left: 5px;
+    }
+  }
+}
