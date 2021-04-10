@@ -223,16 +223,28 @@ img {
 @media (min-width: 40em) {
   .info__stoLeft {
     top: -25%;
-    left: 60%;
+    left: 63%;
     transform: translate(0%);
   }
 }
 
-.info__stoLeft::after {
+.info__stoLeft span {
   font-size: 14px;
   font-weight: 700;
   content: "GB LEFT";
   color: #848794;
   margin-left: 5px;
+}
+
+.info__stoLeft::after {
+  position: absolute;
+  right: 0;
+  bottom: -20px;
+  content: "";
+  width: 0;
+  height: 0;
+  border-top: 20px solid transparent;
+  border-right: 25px solid whitesmoke;
+  border-bottom: 20px solid transparent;
 }
 /*# sourceMappingURL=style.css.map */
