@@ -61,6 +61,18 @@
       top: -25%;
       left: 63%;
       transform: translate(0%);
+
+      &::after {
+        position: absolute;
+        right: 0;
+        bottom: -20px;
+        content: "";
+        width: 0;
+        height: 0;
+        border-top: 20px solid transparent;
+        border-right: 25px solid whitesmoke;
+        border-bottom: 20px solid transparent;
+      }
     }
 
     span {
@@ -69,18 +81,6 @@
       content: "GB LEFT";
       color: $grayishBlue;
       margin-left: 5px;
-    }
-
-    &::after {
-      position: absolute;
-      right: 0;
-      bottom: -20px;
-      content: "";
-      width: 0;
-      height: 0;
-      border-top: 20px solid transparent;
-      border-right: 25px solid whitesmoke;
-      border-bottom: 20px solid transparent;
     }
   }
 }
